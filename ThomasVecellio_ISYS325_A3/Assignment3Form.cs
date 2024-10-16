@@ -37,28 +37,28 @@ namespace ThomasVecellio_ISYS325_A3
                 card1PictureBox.Image = cardImageList.Images[currentCards[0]];
             }
 
-            // Check if the second card should be replaced
+            
             if (!keep2CheckBox.Checked)
             {
                 currentCards[1] = GetUniqueRandomCard();
                 card2PictureBox.Image = cardImageList.Images[currentCards[1]];
             }
 
-            // Check if the third card should be replaced
+
             if (!keep3CheckBox.Checked)
             {
                 currentCards[2] = GetUniqueRandomCard();
                 card3PictureBox.Image = cardImageList.Images[currentCards[2]];
             }
 
-            // Check if the fourth card should be replaced
+
             if (!keep4CheckBox.Checked)
             {
                 currentCards[3] = GetUniqueRandomCard();
                 card4PictureBox.Image = cardImageList.Images[currentCards[3]];
             }
 
-            // Check if the fifth card should be replaced
+            
             if (!keep5CheckBox.Checked)
             {
                 currentCards[4] = GetUniqueRandomCard();
@@ -75,7 +75,7 @@ namespace ThomasVecellio_ISYS325_A3
             {
                 card = random.Next(52);
             }
-            while (currentCards.Contains(card)); // Ensure the card isn't a duplicate
+            while (currentCards.Contains(card)); 
 
             return card;
         }
